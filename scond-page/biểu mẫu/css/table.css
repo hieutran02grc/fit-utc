@@ -1,0 +1,15 @@
+
+
+/* nothing here*/
+.form-button{
+	background: #187bcd;
+	width: 100px;
+	text-align: center;
+	color: white;
+}
+
+.table-title p{
+	padding: 7px;
+	float: right;
+	opacity: 0.7;
+}

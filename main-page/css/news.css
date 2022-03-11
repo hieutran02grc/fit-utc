@@ -1,0 +1,26 @@
+.card-news{
+ height: 150px;
+ width: 100%;
+}
+
+.card-news-bag{
+  padding-bottom: 10px;
+}
+
+.more-info{
+  height: 30px;
+  background-color: #187bcd;
+  padding-top: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  cursor: pointer;
+}
+@media screen and (max-width:  770px){
+body{
+    
+}
+  .card-news{
+    height: 150px;
+    max-width: 350px;
+  }
+
+}

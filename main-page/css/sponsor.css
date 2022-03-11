@@ -1,0 +1,17 @@
+.sponsor{
+	background: white;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.sponsor-title h1{
+	color: black;
+	font-size: 40px;
+	padding: 20px;
+} 
+
+.sponsor img{
+	height: 150px;
+}

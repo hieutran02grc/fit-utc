@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- link to CSS -->
+  <link rel="stylesheet" type="text/css" href="../../main-page/css/header.css">
+  <link rel="stylesheet" type="text/css" href="../../main-page/css/navbar-dropdown.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <link rel="stylesheet" type="text/css" href="css/table.css">
+
+
+  <!-- link to font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header class="container-fluid row">
+    <!-- 1. logo's UTC -->
+    <div class="col-2 box a">
+       <img src="../../main-page/img/logoUTC.jpg" class="rounded mx-auto d-block utc-logo" >  
+    </div>
+    <!-- 2. UTC's name -->
+    <div class="col-7 box b utc-name">
+       <h3>Trường Đại Học Giao Thông Vận Tải</h3>
+       <h3>Khoa Công Nghệ Thông Tin</h3>  
+    </div>
+    <!-- 3. Login functional -->
+    <div class="col-3 box log-c">
+        <!-- in here we have 2 section: "search-bar" "login" -->
+        <div class="login-logout">
+          <a href="#">Giảng Viên</a>
+          <a href="#">Đăng kí</a>
+          <a href="#">Đăng Nhập</a>
+        </div>
+        <div class="wrap">
+          <div class="search">
+             <input type="text" class="searchTerm" placeholder="What are you looking for?">
+             <button type="submit" class="searchButton">
+               <i class="fa fa-search"></i>
+             </button>
+          </div>
+        </div>  
+    </div>
+  </header>
+  <div class="blue-line"></div>
+
+  <!-- navbar dropdown button -->
+  <nav>
+  <div class="wrapper">
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="close-btn">
+    <ul class="nav-links">
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+
+
+      <li>
+        <a href="#" class="none-link" style="border-left: 1px solid #464646;">Giới thiệu</a>
+        <label for="showDrop-1" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Giới Thiệu</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-1">
+        <ul class="drop-menu">
+          <li><a href="#">Thông tin trung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Khoa-Trung tâm</a>
+        <label for="showDrop-2" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Khoa-Trung tâm</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-2">
+        <ul class="drop-menu">
+           <li><a href="#">Khoa học máy tính</a></li>
+          <li><a href="#">Kỹ thuật máy tính</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Đào Tạo</a>
+        <label for="showDrop-3" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Đào Tạo</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-3">
+        <ul class="drop-menu">
+          <li><a href="#">Giới thiệu chung</a></li>
+          <li><a href="#">Hệ đại học</a></li>
+          <li><a href="#">Hệ thạc sĩ</a></li>
+          <li><a href="#">Hệ tiến sĩ</a></li>
+          <li><a href="#">Đào tạo chứng chỉ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Nghiên cứu</a>
+        <label for="showDrop-4" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Nghiên cứu</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-4">
+        <ul class="drop-menu">
+          <li><a href="#">Giới thiệu chung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Tuyển sinh</a>
+        <label for="showDrop-5" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Tuyển sinh</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-5">
+        <ul class="drop-menu">
+          <li><a href="#">Thông tin trung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Sinh Viên</a>
+        <label for="showDrop-6" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Sinh Viên</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-6">
+        <ul class="drop-menu">
+          <li><a href="#">Thông tin trung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Hợp tác đối ngoại</a>
+        <label for="showDrop-7" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Hợp tác đối ngoại</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-7">
+        <ul class="drop-menu">
+          <li><a href="#">Thông tin trung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Cựu sinh viên</a>
+        <label for="showDrop-8" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Cựu sinh viên</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-8">
+        <ul class="drop-menu">
+          <li><a href="#">Thông tin trung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Tin tức sự kiện</a>
+        <label for="showDrop-9" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Tin tức sự kiện</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-9">
+        <ul class="drop-menu">
+          <li><a href="#">Thông tin trung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="none-link">Tuyển dụng</a>
+        <label for="showDrop-10" class="mobile-item"><a href="https://www.facebook.com/" class="link-to">Tuyển dụng</a><i class=" fas fa-caret-down" style="user-select: auto;"></i></label>
+        <input type="checkbox" id="showDrop-10">
+        <ul class="drop-menu">
+          <li><a href="#">Thông tin trung</a></li>
+          <li><a href="#">Triết lí giáo dục</a></li>
+          <li><a href="#">Cơ cấu tổ chức</a></li>
+          <li><a href="#">Đảng ủy - hội đồng trường</a></li>
+          <li><a href="#">Ban lãnh đạo</a></li>
+          <li><a href="#">Các tổ chức đoàn thể</a></li>
+          <li><a href="#">Văn phòng trường</a></li>
+          <li><a href="#">Danh sách cán bộ</a></li>
+        </ul>
+      </li>
+
+
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+  </div>
+</nav>
+<!-- container -->
+<div class="container-box">
+  <!-- phần đầu -->
+  <div class="link-tag">
+   <a href="#">Trang chủ<i class="fas fa-angle-right"></i></a>
+   <a href="#">Sự kiện</a>
+ </div>
+<!--phần giữa-->
+<div class="container-box-mid">
+  <div class="box-m-left">
+    <h2><strong>Tin tức-Sự kiện</strong></h2>
+    <ul><a href="#" style="font-size: 20px; text-decoration: none;">Tin tức</a>
+      <li><a href="#">Tin trong trường</a></li>
+      <li><a href="#">Tin công nghệ</a></li>
+      <li><a href="#">Đoàn thanh niên</a></li>
+      <li><a href="#">Tin trong khoa</a></li>
+      <li><a href="#">Hội thảo khoa học</a></li>
+    </ul>
+  </div>
+  <div class="box-m-right">
+    <div class="box-r-img">
+      <img src="img/sliden.png" style="width: 100%; height: auto;">
+    </div>
+    <div class="row main-content">
+      <div class="col-md-9 box-test">
+        <!-- table ở đây -->
+        <div class="table-title">
+          <div class="form-button"><h5>Biểu mẫu</h5></div>
+          <h3>Biểu mẫu và quy định dành cho sinh viên</h3>
+          <div class="blue-line" style="width: 10%;"></div>
+          <p><i>Cập nhật lần cuối: 23/02/2022 22:12</i></p>
+        </div>
+        <div class="table-content">
+         <table class="table table-bordered" >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Biểu Mẫu</th>
+              <th scope="col">Hình thức/Hướng dẫn</th>
+              <th scope="col">Xem/Tải lại</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Giấy chưng nhân sinh viên</td>
+              <td rowspan="4"><a href="https://getbootstrap.com/"><p>đăng kí trực tuyến tại: https://getbootstrap.com/</p></a></td>
+               <td rowspan="4"><a href="https://www.youtube.com/"><p>xem tải lại tại: https://www.youtube.com/</p></a></td>
+
+            </tr>
+            <tr>
+              <th scope="row" rowspan="">2</th>
+              <td>Giấy giới thiệu</td>
+   
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>In sao bảng điểm</td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>Giấy chứng nhận tốt nghiệp</td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>Đơn xin mở lớp bổ sung dành cho cá nhân</td>
+              <td rowspan="9"><a href="https://www.youtube.com/"><p>Đăng ký học tập online trong giai đoạn dịch Covid: Sinh viên thực hiện theo hướng dẫn tại.</p>
+              <p>alo?</p>
+              </a></td>
+              <td rowspan="9"><a href="https://www.youtube.com/"><p> https://www.youtube.com/</p></a></td>
+            </tr>
+
+            <tr>
+              <th scope="row">6</th>
+              <td>Đơn xin mở lớp bổ sung dành cho tập thể</td>
+            </tr>
+
+            <tr>
+              <th scope="row">7</th>
+              <td>Đơn xin đăng ký lớp</td>
+            </tr>
+
+            <tr>
+              <th scope="row">8</th>
+              <td>Quy trình xác nhận HP Thay thế/ tương đương(chuyển điểm)</td>
+            </tr>
+
+            <tr>
+              <th scope="row">9</th>
+              <td>Đơn xin hủy đăng ký lớp</td>
+            </tr>
+
+            <tr>
+              <th scope="row">10</th>
+              <td>Đơn xin đăng ký Đồ án tốt nghiệp hè</td>
+            </tr>
+
+            <tr>
+              <th scope="row">11</th>
+              <td>Mẫu đồ án/khóa luận tốt nghiệp</td>
+            </tr>
+
+            <tr>
+              <th scope="row">12</th>
+              <td>Mẫu đơn xác nhận HP Thay thế/tương đương (chuyển điểm)</td>
+            </tr>
+
+            <tr>
+              <th scope="row">13</th>
+              <td>Đơn xin mượn hồ sơ</td>
+            </tr>
+
+            <tr>
+              <th scope="row">14</th>
+              <td>Thực tập doanh nghiệp</td>
+              <td><a href="https://qldt.utc.edu.vn/"></a>đăng ký trực tuyến tại https://qldt.utc.edu.vn/</td>
+              <td><a href="https://qldt.utc.edu.vn/">đây nữa</a></td>
+            </tr>
+
+            <tr>
+              <th scope="row">15</th>
+              <td>Những điều sinh viên cần biết</td>
+              <td>sổ tay sinh viên trực tuyến</td>
+              <td><a href="https://qldt.utc.edu.vn/">đây nữa</a></td>
+            </tr>
+
+           
+
+
+          </tbody>
+          </table>
+          
+        </div>
+      </div>
+      <div class="col-md-3 box-test">
+        <div class="right-content">
+           <div class="right-content-event">
+           <h3>Tin nổi bật</h3>
+            <div class="blue-line-m"></div>
+            <ul>
+              <li><a href="#">Thông báo về tuyển gian viên ngành công nghệ thông tin</a></li>
+              <li><a href="#">Thông báo về đăng kí học phần thực tâp</a></li>
+              <li><a href="#">tuyển dụng 2020</a></li>
+              <li><a href="#">Dấu ấn dự án CNTT</a></li>
+            </ul>
+            </div>
+        <div class="right-content-event">
+            <h3>Bài viết mới nhất</h3>
+            <div class="blue-line-m"></div>
+              <ul>
+                <li><a href="#">Thông báo về tuyển gian viên ngành công nghệ thông tin</a></li>
+                <hr>
+                <li><a href="#">Thông báo về đăng kí học phần thực tâp</a></li>
+                <hr>
+                <li><a href="#">tuyển dụng 2020</a></li>
+                <hr>
+                <li><a href="#">Dấu ấn dự án CNTT</a></li>
+                <hr>
+              </ul>
+        </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
