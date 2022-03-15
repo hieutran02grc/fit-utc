@@ -5,8 +5,9 @@
 
 .alumni .swiper {
         width: 90%;
-        height: 65%;
+        height: auto;
         cursor: pointer;
+        padding-buttom: 10px;
       }
 .alumni .swiper-wrapper{
  height: 90%;
