@@ -14,6 +14,12 @@
   font-family: 'Rajdhani', sans-serif;
   cursor: pointer;
 }
+
+.link-to-go{
+  text-decoration: none;
+  color:  black;
+}
+
 @media screen and (max-width:  770px){
 body{
     
