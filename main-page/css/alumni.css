@@ -53,10 +53,19 @@
 
 }
 
-.alumni-text{
+/* margin để xóa khoảng trắng ở trên rồi đặt lại height cho nó */
+
+.alumni-text {
+  text-align: left;
   padding-left: 5px;
+  margin-top: -40px;
+  height: 120px;
+
 }
 
+/* xóa 2 cái này đi */
+
+/*
 .alumni-text h5{
   text-align: left;
   padding-left: 5px;
@@ -69,10 +78,11 @@
   position: relative;
   top: -40px;
 }
+*/
 
 
 
-@media screen and (max-width:  1200px){
+@media screen and (max-width:  1250px){
   .alumni .alumni-tag p{
     font-size: 12px;
   }
@@ -92,6 +102,10 @@
   position: relative;
   top: -39px;
   z-index: 2;
+
+}
+  .alumni-text {
+  font-size: 16px;
 
 }
 
@@ -119,6 +133,11 @@
   top: 0px;
   left: 0px;
   font-size: 15px;
+
+}
+  
+  .alumni-text {
+  font-size: 26px;
 
 }
 
