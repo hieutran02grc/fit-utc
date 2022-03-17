@@ -1,7 +1,17 @@
+/*update class 17/03
+*/
+
+.container-news{
+   width:84%;
+   margin-left: 8%;
+}
+
+
 .card-news{
  height: 150px;
  width: 100%;
 }
+
 
 .card-news-bag{
   padding-bottom: 10px;
