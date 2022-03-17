@@ -1,7 +1,9 @@
 .sponsor{
-	background: white;
+	width: 98%;
+	margin-left: 1%;
 	display: flex;
 	justify-content: center;
+    background-color: white;
 }
 
 
@@ -14,4 +16,19 @@
 
 .sponsor img{
 	height: 150px;
+}
+
+@media all and (max-width: 1250px){
+	.sponsor img{
+	height: 100px;
+}
+}
+
+@media all and (max-width: 700px){
+
+   
+
+	.sponsor img{
+	height: 50px;
+}
 }
