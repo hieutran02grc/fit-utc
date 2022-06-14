@@ -35,6 +35,19 @@
   cursor: pointer;
 }
 
+.more-info h5::after {
+  padding-left: 0px;
+  padding-top: 0px;
+  content: '>>';
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.more-info h5:hover:after{
+  padding-left: 3px;
+  opacity: 1;
+}
+
 .link-to-go{
   text-decoration: none;
   color:  black;
@@ -49,4 +62,45 @@ body{
     max-width: 350px;
   }
 
+}
+
+
+
+
+
+.swiper-button-next::before{
+  content: '';
+  position: absolute;
+  right: -8px;
+  width: 185%;
+  height: 115%;
+  background-color: #C5C6D0;
+  z-index: -1;
+  border-radius: 200px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.swiper-button-next:hover:before{
+  opacity: 1;
+  
+}
+
+.swiper-button-prev::before{
+  content: '';
+  position: absolute;
+  left: -7px;
+  width: 185%;
+  height: 115%;
+  background-color: #C5C6D0;
+  z-index: -1;
+  border-radius: 200px;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+
+.swiper-button-prev:hover:before{
+  opacity: 1;
+  
 }
